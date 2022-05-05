@@ -41,3 +41,47 @@ a:hover{
     height: 100%;
     
 }
+.menu-hamburguer{
+    font-size: 1.8em;
+    float: right;
+    visibility: hidden;
+}
+.box-imagenes{
+    display: grid;
+    width: 90%;
+    background-color: blue;
+    margin: 0 auto;
+    grid-template:"dsp-carreras" "dsp-terrestre" "dsp-tri";
+}
+.dsp-carreras{
+    grid-area: dsp-carreras;
+
+
+}
+.dsp-terrestre{
+    grid-area: dsp-terrestre;
+}
+.dsp-tri{
+    grid-area: dsp-tr ;
+
+}
+@media  only screen and (min-width:320px) 
+and (max-width:1000px) {
+    
+    ul li{
+        visibility: hidden;
+        
+    }
+    .menu-hamburguer{
+        visibility: visible;
+        
+    }
+    .box-imagenes{
+        grid-template: "dsp-carreras"
+                        "dsp-terrestre"
+                        " dsp-tri" ;
+
+    }
+
+   
+}
